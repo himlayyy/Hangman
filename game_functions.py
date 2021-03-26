@@ -5,6 +5,7 @@ import random
 from words import words_list
 from letters import Letter, Menu
 
+
 def get_word():
     word = random.choice(words_list)
     while " " in word or "-" in word:
@@ -12,7 +13,6 @@ def get_word():
     dash_word = dashify(word)
     return word, dash_word, set(word)
 
-#
 
 def draw_word(dash_word, word_font, game_settings, main_screen):
     the_dash_word = word_font.render(dash_word, True, (230, 0, 0))

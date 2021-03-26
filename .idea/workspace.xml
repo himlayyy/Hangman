@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="21878066-72c5-41fe-972d-d807c70df60c" name="Default Changelist" comment="" />
+    <list default="true" id="21878066-72c5-41fe-972d-d807c70df60c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1qILSPOOfLSAXO7IYQI4un4crDh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -17,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.longest">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="hangman" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -31,6 +58,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gh" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hangman" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Asus\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gh.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -60,8 +108,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="longest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hangman" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Asus\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/longest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.longest" />
+        <item itemvalue="Python.gh" />
         <item itemvalue="Python.hangman" />
       </list>
     </recent_temporary>
@@ -79,46 +150,65 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616762582916">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1616762582916" />
+    <state x="392" y="0" key="#gh" timestamp="1616771265922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#gh/0.0.1366.728@0.0.1366.728" timestamp="1616771265922" />
     <state x="392" y="0" key="#gui" timestamp="1616762625404">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#gui/0.0.1366.728@0.0.1366.728" timestamp="1616762625404" />
-    <state width="74" height="600" key="GridCell.Tab.0.bottom" timestamp="1616765254031">
+    <state x="392" y="0" key="#longest" timestamp="1616771338657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="74" height="600" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616765254031" />
-    <state width="74" height="600" key="GridCell.Tab.0.center" timestamp="1616765254031">
+    <state x="392" y="0" key="#longest/0.0.1366.728@0.0.1366.728" timestamp="1616771338657" />
+    <state width="224" height="600" key="GridCell.Tab.0.bottom" timestamp="1616771338720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="74" height="600" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616765254031" />
-    <state width="74" height="600" key="GridCell.Tab.0.left" timestamp="1616765254031">
+    <state width="224" height="600" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616771338720" />
+    <state width="224" height="600" key="GridCell.Tab.0.center" timestamp="1616771338720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="74" height="600" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616765254031" />
-    <state width="74" height="600" key="GridCell.Tab.0.right" timestamp="1616765254031">
+    <state width="224" height="600" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616771338720" />
+    <state width="224" height="600" key="GridCell.Tab.0.left" timestamp="1616771338720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="74" height="600" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616765254031" />
-    <state width="1345" height="2" key="GridCell.Tab.1.bottom" timestamp="1616763081414">
+    <state width="224" height="600" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616771338720" />
+    <state width="224" height="600" key="GridCell.Tab.0.right" timestamp="1616771338720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616763081414" />
-    <state width="1345" height="2" key="GridCell.Tab.1.center" timestamp="1616763081414">
+    <state width="224" height="600" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616771338720" />
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom" timestamp="1616766104008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1616763081414" />
-    <state width="1345" height="2" key="GridCell.Tab.1.left" timestamp="1616763081414">
+    <state width="1345" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616766104008" />
+    <state width="1345" height="2" key="GridCell.Tab.1.center" timestamp="1616766104008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1616763081414" />
-    <state width="1345" height="2" key="GridCell.Tab.1.right" timestamp="1616763081414">
+    <state width="1345" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1616766104008" />
+    <state width="1345" height="2" key="GridCell.Tab.1.left" timestamp="1616766104008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1616763081414" />
+    <state width="1345" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1616766104008" />
+    <state width="1345" height="2" key="GridCell.Tab.1.right" timestamp="1616766104008">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1616766104008" />
   </component>
 </project>

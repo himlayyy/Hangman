@@ -10,31 +10,51 @@ from words import words_list
 
 def end_screen(main_screen, word_font, streak):
 
+    end_menu = create_menu(["Quit", "Try Again"])
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+            elif event.type == pygame.MOUSEMOTION:
+                for menu in end_menu:
+                    menu.on_mousemotion(event)
+            elif event.type == pygame.MOUSEBUTTONUP:
+                if event.button == 1:
+                    for menu in end_menu:
+                        choice = menu.menu_select()
+                        if choice == "Quit":
+                            sys.exit()
+                        else:
+                            run_game(main_screen, clock, game_settings, streak, word_font, lives_font)
     # name_pile = gf.draw_letters()
     # prompt = "Enter your name: "
-    # gf.draw_word(prompt, word_font, game_settings, main_screen)
+    # gf.draw_prompt(prompt, word_font, main_screen, game_settings)
+    # gf.draw_word("---", word_font, game_settings, main_screen)
+    # gf.draw_over("GAME OVER", word_font, game_settings, main_screen)
+
     # player_name = '---'
     #
-    # for event in pygame.event.get():
-    #     if event.type == pygame.QUIT:
-    #         sys.exit()
-        # elif event.type == pygame.MOUSEMOTION:
-        #     for menu in menus:
-        #         menu.on_mousemotion(event)
-        # elif event.type == pygame.MOUSEBUTTONUP:
-        #     if event.button == 1:
-        #         for menu in menus:
-        #             choice = menu.menu_select()
-        #             if choice == "Start":
-        #                 run_game(main_screen, clock, game_settings, streak, word_font, lives_font)
-    #     else:
-    #         sys.exit()
-    #
-    # main_screen.fill(game_settings.bg_color)
-    # for letter in letter_pile:
-    #     letter.update_letters(main_screen)
-    # pygame.display.flip()
-    sys.exit()
+    # while True:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             sys.exit()
+    #         elif event.type == pygame.MOUSEMOTION:
+    #             for letter in name_pile:
+    #                 letter.on_mousemotion(event)
+    #         elif event.type == pygame.MOUSEBUTTONUP:
+    #             if event.button == 1:
+    #                 for letter in letter_pile:
+    #                     letter.on_click(picked_letters)
+            #                 run_game(main_screen, clock, game_settings, streak, word_font, lives_font)
+        #     else:
+        #         sys.exit()
+        #
+        main_screen.fill(game_settings.bg_color)
+        gf.draw_word("Game over!", word_font, game_settings, main_screen)
+        for menu in end_menu:
+            menu.update_letters(main_screen)
+        pygame.display.flip()
+
 
 
 def run_game(main_screen, clock, game_settings, streak, word_font, lives_font):
@@ -116,7 +136,24 @@ def run_game(main_screen, clock, game_settings, streak, word_font, lives_font):
             game_over = True
             end_screen(main_screen, word_font, streak)
 
-def main_menu():
+# def main_menu():
+#
+#     menus = []
+#
+#     menu_box_height = 75
+#     menu_box_width = 200
+#     menu_box_x = 165
+#     menu_box_y = 300
+#     spacer = 10
+#
+#     for count, i in enumerate(["Start","Quit"]):
+#         lt = Menu(i, menu_box_x, menu_box_y, menu_box_width, menu_box_height)
+#         menus.append(lt)
+#         menu_box_y = menu_box_y + menu_box_height + spacer
+#
+#     return menus
+
+def create_menu(options):
 
     menus = []
 
@@ -126,12 +163,13 @@ def main_menu():
     menu_box_y = 300
     spacer = 10
 
-    for count, i in enumerate(["Start","Quit"]):
+    for count, i in enumerate(options):
         lt = Menu(i, menu_box_x, menu_box_y, menu_box_width, menu_box_height)
         menus.append(lt)
         menu_box_y = menu_box_y + menu_box_height + spacer
 
     return menus
+
 
 pygame.init()
 
@@ -146,7 +184,7 @@ streak = 0
 word_font = pygame.font.SysFont("couriernew", 40)
 lives_font = pygame.font.SysFont("couriernew", 15)
 
-menus = main_menu()
+menus = create_menu(["Start","Quit"])
 
 while True:
     for event in pygame.event.get():
@@ -164,7 +202,6 @@ while True:
                     else:
                         sys.exit()
 
-        # print(options)
     main_screen.fill(game_settings.bg_color)
     for menu in menus:
         menu.update_letters(main_screen)
