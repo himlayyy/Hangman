@@ -14,11 +14,13 @@ def get_word():
     return word, dash_word, set(word)
 
 
-def draw_word(dash_word, word_font, game_settings, main_screen):
+def draw_word(dash_word, game_settings, main_screen):
+    word_font = pygame.font.SysFont("couriernew", 40)
     the_dash_word = word_font.render(dash_word, True, (230, 0, 0))
     dash_word_rect = the_dash_word.get_rect(
         center=(int(game_settings.screen_width / 2), int(game_settings.screen_height_third * 1.82)))
     main_screen.blit(the_dash_word, dash_word_rect)
+
 
 def draw_letters():
     letter_box_height = 40
@@ -40,9 +42,11 @@ def draw_letters():
                 letter_box_x = 120
     return letter_pile
 
+
 def dashify(word):
     dash_word = "".join("-" for char in word)
     return dash_word
+
 
 def update_word(picked_letters, word, dash_word):
         dwu = list(dash_word)
@@ -53,6 +57,7 @@ def update_word(picked_letters, word, dash_word):
         dash_word = (dw(dwu))
         print(f" dash word {dash_word}")
         return dash_word
+
 
 def check_pick(picked_letters, word_set, lives):
     print(f"In check pick: lives {lives}")
@@ -65,6 +70,7 @@ def check_pick(picked_letters, word_set, lives):
     except IndexError:
         pass
     return lives
+
 
 def draw_gallow(main_screen, lives):
     gallow = pygame.Rect(150, 50, 5, 250)
@@ -94,12 +100,13 @@ def draw_gallow(main_screen, lives):
     pygame.draw.rect(main_screen, (120, 20, 10), stand)
     pygame.draw.rect(main_screen, (120, 20, 10), hanger)
 
+
 def check_lives(lives):
     print(f"In check lives: lives left = {lives}")
     lives = lives - 1
     print(f"In check lives: lives  - 1 = {lives}")
     return lives
-    #after ani mag minus minus sa life
+
 
 def check_won(picked_letters, word_set):
     # if word_set.issubset(set(picked_letters)):
@@ -108,23 +115,43 @@ def check_won(picked_letters, word_set):
     else:
         return False
 
+
 def check_dead(lives_left):
     if lives_left <= 0:
         return True
     else:
         return False
 
-def update_lives(main_screen, lives, lives_font):
+
+def update_lives(main_screen, lives):
+    lives_font = pygame.font.SysFont("couriernew", 15)
     lives_display = lives_font.render(f"Lives left: {str(lives)}", True, (pygame.Color('red')))
     main_screen_rect = main_screen.get_rect()
     lives_display_rect = lives_display.get_rect(topleft =(main_screen_rect.left + 10, main_screen_rect.top + 10))
     main_screen.blit(lives_display, lives_display_rect)
 
-def update_streak(main_screen, streak, lives_font):
-    streak_display = lives_font.render(f"Streak: {str(streak)}", True, (pygame.Color('green')))
+
+def update_streak(main_screen, streak):
+    streak_font = pygame.font.SysFont("couriernew", 15)
+    streak_display = streak_font.render(f"Streak: {str(streak)}", True, (pygame.Color('green')))
     main_screen_rect = main_screen.get_rect()
     streak_display_rect = streak_display.get_rect(topleft=(main_screen_rect.left + 10, main_screen_rect.top + 25))
     main_screen.blit(streak_display, streak_display_rect)
+
+def draw_scene_title(titles, main_screen):
+    title_font = pygame.font.SysFont("couriernew", 45)
+    y = main_screen.get_rect().centery - (10 * len(titles)) - ((52 * len(titles)))
+    # y = main_screen.get_rect().top + 200
+    for i, title in enumerate(titles, 1):
+        title_display = title_font.render(title, True, (pygame.Color('green')))
+        title_rect = title_display.get_rect(center=(main_screen.get_rect().centerx, y))
+        main_screen.blit(title_display, title_rect)
+        y = y + (52 * i) + (10 * i)
+        # print(title_rect.bottom - title_rect.top)
+
+
+
+
 
 
 
